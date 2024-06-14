@@ -13,11 +13,11 @@
 
 # fw876/helloworld
 # Uncomment the helloworld feed source if it's commented out
-sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
+sed -i 's/^#\(.*helloworldopenwrt\)/\1/' feeds.conf.default
 
 # Add a feed source if it doesn't already exist
-if ! grep -q "src-git helloworld https://github.com/dmulxw/helloworldopenwrt" feeds.conf.default; then
-    echo 'src-git helloworld https://github.com/dmulxw/helloworldopenwrt' >>feeds.conf.default
+if ! grep -q "src-git helloworldopenwrt https://github.com/dmulxw/helloworldopenwrt" feeds.conf.default; then
+    echo 'src-git helloworldopenwrt https://github.com/dmulxw/helloworldopenwrt' >>feeds.conf.default
 fi
 
 # Add a feed source

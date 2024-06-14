@@ -58,6 +58,9 @@ jobs:
         cd openwrt
         ../$DIY_P1_SH
 
+    - name: Display feeds.conf.default
+      run: cat openwrt/feeds.conf.default
+      
     - name: Update feeds
       run: cd openwrt && ./scripts/feeds update -a
 
